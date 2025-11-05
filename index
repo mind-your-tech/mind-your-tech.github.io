@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meaningful Metadesign – Sentimento, Senso e Scopo nell'era del Design delle Esperienze</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Meaningful Metadesign è un progetto di ricerca che esplora il ruolo del sentimento, del senso e dello scopo nell’era del design delle esperienze. Un approccio sistemico e riflessivo al progetto contemporaneo.">
+  <meta name="keywords" content="Meaningful Metadesign, design esperienziale, design, metaprogetto, progetto, ux, hci, design thinking, esperienza utente, filosofia, significato, senso, scopo, sentimento, design olistico, human centered design, luciano floridi, umberto galimberti, victor papanek, antonio damasio, vittorio gallese, giacomo rizzolatti, don norman, gunther anders, byung-chul han, silvio lorusso, roberto verganti, umberto eco, politecnico di milano, tecnologia, progettazione, estetica, etica, semiotica, Politesi, design sistemico, design culturale, comunicazione visiva, arte e tecnologia, filosofia del design, design responsabile, creatività, società, valore, emozione, senso critico, design del significato, design sostenibile, design sociale, design strategico, innovation design, progettazione avanzata, design dei servizi, interaction design, speculative design, teoria del design, design del futuro, progettazione consapevole">
+  <meta name="author" content=" Meaningful Metadesign Project">
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- Styles -->
+  <style>
+    html, body {
+      height: auto;              /* non fissare l'altezza */
+      min-height: 100vh;         /* garantisci comunque l'altezza minima dello schermo */
+      overflow-y: auto;  
+      background-color: #002fa7;
+      color: white;
+      font-family: 'Work Sans', sans-serif;      
+      /*display: flex;*/
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+
+    #container {
+      margin: 10vw auto;
+      text-align: center;
+      width: 50vw;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 5vw;
+      margin: 0 0 2vw 0;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 2.5vw;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .toggle-btn {
+      width: 8vw;
+      height: 4vw;
+      background-color: white;
+      color: #002fa7;
+      border: none;
+      border-radius: 2vw;
+      margin-top: 4vw;
+      font-size: 2vw;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .toggle-btn:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.05);
+    }
+    
+    #intro {
+      display: none;
+      margin-top: 2.5vw;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.2;
+      text-align: justify;
+      color: white;
+    }
+
+    @media (max-width: 640px) {
+      #container {
+        width: 90vw;
+        margin-top: 200px;
+      }
+
+      h1 {
+        font-size: 10vw;
+      }
+
+      h2 {
+        font-size: 5vw;
+      }
+
+      .toggle-btn {
+        width: 16vw;
+        height: 8vw;
+        border-radius: 4vw;
+        margin-top: 8vw;
+        font-size: 4vw;
+      }
+
+      #intro {
+        margin-top: 5vw;
+        padding: 5vw;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    
+    <h1>MEANINGFUL<br>METADESIGN</h1>
+    <h2>Sentimento, Senso e Scopo<br>nell'era del Design delle Esperienze</h2>
+    <button class="toggle-btn" onclick="toggleIntro()">...</button>
+    <p id="intro">Il design non è e non può essere solamente un abilitatore di soluzioni funzionali, basato su processi di natura deterministica e quantitativa, poiché per sua natura lo sviluppo tecnico e tecnologico che accompagna il design definisce come l'essere umano fa esperienza del mondo che abita e come dà ad esso un significato grazie a processi interpretativi e qualitativi.</br></br>
+Il termine meaningful metadesign significa progettazione di pratiche progettuali con un valore significativo per gli esseri umani, ossia un approccio basato sull’esplorazione del significato profondo del progetto. Un approccio che consiste nell’evidenziare come il senso che ogni artefatto o sistema progettato assume per chi ci interagisce sia sempre legato ai processi del vissuto emotivo umano, processi necessariamente soggettivi che sfuggono a qualsiasi riduzionismo deterministico.</br></br>
+Pensare al meaningful metadesign è un atto di speranza che nasce dal desiderio di mettere in evidenza quanto sia riduttivo progettare artefatti tecnologici in grado di stimolare determinate emozioni quando non si considera l’esperienza umana in quanto processo olistico e integrato...</p>
+    
+  </div>
+  <script>
+    function toggleIntro() {
+      const intro = document.getElementById('intro');
+
+      if (intro.style.display === 'none' || intro.style.display === '') {
+        intro.style.display = 'block';
+        
+      } else {
+        intro.style.display = 'none';
+        
+      }
+    }
+  </script>
+</body>
+</html>
